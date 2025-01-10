@@ -1,12 +1,15 @@
-<!DOCTYPE html>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="title" content="SnackBuddy - Ідеальна пара до вашого напою">
+    <meta name="description" content="SnackBuddy пропонує смачні снеки: горішки, чіпси, сухаріки, сушені морепродукти.
+    Великий асортимент, свіжість продуктів та швидка доставка. Замовляйте онлайн!">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
     <title>SnackBuddy</title>
 </head>
 <body>
@@ -26,7 +29,7 @@
     <main>
         <section class="banner">
             <h1>Ідеальна пара до вашого напою!</h1>
-            <h3>Обирайте смачні снеки для будь-якого настрою та події</h3>
+            <p>Обирайте смачні снеки для будь-якого настрою та події</p>
             <button>Обрати снеки</button>
         </section>
         <section id="advantages">
@@ -40,30 +43,33 @@
         </section>
         <section id="catalogue">
             <h2>Каталог</h2>
-            <article>
-                <img src="./assets/images/nuts-production.png" alt="Горішки">
-                <h3>Горішки</h3>
-                <p></p>
-                <button>Докладніше</button>
-            </article>
-            <article>
-                <img src="./assets/images/chips-production.png" alt="Чіпси">
-                <h3>Чіпси</h3>
-                <p></p>
-                <button>Докладніше</button>
-            </article>
-            <article>
-                <img src="./assets/images/bread-production.png" alt="Сухаріки">
-                <h3>Сухаріки</h3>
-                <p></p>
-                <button>Докладніше</button>
-            </article>
-            <article>
-                <img src="./assets/images/sea-production.png" alt="Сушені морепродукти">
-                <h3>Сушені морепродукти</h3>
-                <p></p>
-                <button>Докладніше</button>
-            </article>
+            <div class="catalogue-cards">
+                <article>
+                    <img src="./assets/images/nuts-production.png" alt="Горішки">
+                    <h3>Горішки</h3>
+                    <p>Смажені та ароматні горішки, які стануть чудовим перекусом у будь-який час.</p>
+                    <button>Докладніше</button>
+                </article>
+                <article>
+                    <img src="./assets/images/chips-production.png" alt="Чіпси">
+                    <h3>Чіпси</h3>
+                    <p>Хрусткі чіпси з натуральних інгредієнтів для справжніх поціновувачів смаку.</p>
+                    <button>Докладніше</button>
+                </article>
+                <article>
+                    <img src="./assets/images/bread-production.png" alt="Сухаріки">
+                    <h3>Сухаріки</h3>
+                    <p>Апетитні сухаріки з різними смаками, що доповнять ваш улюблений напій.</p>
+                    <button>Докладніше</button>
+                </article>
+                <article>
+                    <img src="./assets/images/sea-production.png" alt="Сушені морепродукти">
+                    <h3>Сушені морепродукти</h3>
+                    <p>Сушені морепродукти з вишуканим смаком для гурманів.</p>
+                    <button>Докладніше</button>
+                </article>
+            </div>
+
         </section>
         <section id="feedback">
             <h2>Відгуки клієнтів</h2>
@@ -83,16 +89,34 @@
                     <h3>Марія, Одеса</h3>
                     <p>Брали на компанію, дуже свіжа продукція, ми задоволені!</p>
                 </article>
-                <img src="./assets/images/left-arrow.svg" alt="Стрілка вліво">
-                <img src="./assets/images/right-arrow.svg" alt="Стрілка вправо">
+                <img src="./assets/images/left-arrow.svg" alt="попередній">
+                <img src="./assets/images/right-arrow.svg" alt="наступний">
             </div>
+        </section>
+        <section id="form-section">
+            <h2>Контактна форма</h2>
+            <form>
+                <div>
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Ваше ім'я">
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                </div>
+                <div>
+                    <label for="message">Повідомлення</label>
+                    <textarea id="message" name="message" placeholder="Напишіть Ваше повідомлення"></textarea>
+                </div>
+                <button type="submit">Надіслати заявку</button>
+            </form>
         </section>
     </main>
     <footer id="contacts">
         <div class="social">
-            <img src="./assets/images/telegram-logo.svg" alt="лого телеграму">
-            <img src="./assets/images/instagram-logo.svg" alt="лого інстаграму">
-            <img src="./assets/images/facebook-logo.svg" alt="лого фейсбуку">
+            <a href="#"><img src="./assets/images/telegram-logo.svg" alt="посилання на телеграм"></a>
+            <a href="#"><img src="./assets/images/instagram-logo.svg" alt="посилання на інстаграм"></a>
+            <a href="#"><img src="./assets/images/facebook-logo.svg" alt="посилання на фейсбук"></a>
         </div>
         <div class="contacts">
             <a href="tel:+3804567890">+3804567890</a>
@@ -103,4 +127,4 @@
         </div>
     </footer>
 </body>
-</html>
+</html>посилання на
