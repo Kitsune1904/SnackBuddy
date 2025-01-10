@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SnackBuddy.iml" filepath="$PROJECT_DIR$/.idea/SnackBuddy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../just_cod/conference-ticket-generator-main/.idea/conference-ticket-generator-main.iml" filepath="$PROJECT_DIR$/../just_cod/conference-ticket-generator-main/.idea/conference-ticket-generator-main.iml" />
+    </modules>
+  </component>
+</project>
