@@ -4,119 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <meta name="title" content="SnackBuddy - Ідеальна пара до вашого напою">
-    <meta name="description" content="SnackBuddy пропонує смачні снеки: горішки, чіпси, сухаріки, сушені морепродукти.
-    Великий асортимент, свіжість продуктів та швидка доставка. Замовляйте онлайн!">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="SnackBuddy пропонує смачні снеки: горішки, чіпси, сухаріки, сушені морепродукти. Великий асортимент, свіжість продуктів та швидка доставка. Замовляйте онлайн!">
+    <meta name="keywords" content="SnackBuddy, снеки, горішки, чіпси, сухаріки, сушені морепродукти, швидка доставка, свіжі снеки, снеки до напоїв">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>SnackBuddy</title>
 </head>
 <body>
     <header>
-        <img src="assets/images/logo.png" alt="Лого компанії">
+        <h1>SnackBuddy</h1>
         <nav>
             <ul>
-                <li><a href="#">Головна</a></li>
+                <li><a href="#main">Головна</a></li>
                 <li><a href="#advantages">Переваги</a></li>
                 <li><a href="#catalogue">Каталог</a></li>
                 <li><a href="#feedback">Відгуки</a></li>
                 <li><a href="#contacts">Контакти</a></li>
             </ul>
+            <img src="./assets/images/icons/menu-burger.svg" alt="відкрити меню" id="open-menu-btn">
+            <img src="./assets/images/icons/cross.svg" alt="закрити меню" id="close-menu-btn">
         </nav>
-        <button>Замовити</button>
+        <button class="main-btn" id="open-form">Замовити</button>
     </header>
     <main>
-        <section class="banner">
+        <section id="main" class="banner">
             <h1>Ідеальна пара до вашого напою!</h1>
             <p>Обирайте смачні снеки для будь-якого настрою та події</p>
             <button>Обрати снеки</button>
         </section>
-        <section id="advantages">
+        <section class="advantages" id="advantages">
             <h2>Переваги</h2>
             <ul>
-                <li><img src="./assets/images/fresh.svg" alt="Знак свіжості">Свіжість продуктів</li>
-                <li><img src="./assets/images/assortment.svg" alt="Знак великого асортименту">Великий асортимент</li>
-                <li><img src="./assets/images/fast-delivery.svg" alt="Знак швидкої машини">Швидка доставка</li>
-                <li><img src="./assets/images/discount-promo.svg" alt="Знак проценту">Акційні пропозиції</li>
+                <li><img src="assets/images/icons/quality.svg" alt="Знак свіжості">Свіжість продуктів</li>
+                <li><img src="assets/images/icons/assortment.svg" alt="Знак великого асортименту">Великий асортимент</li>
+                <li><img src="assets/images/icons/fast-delivery.svg" alt="Знак швидкої машини">Швидка доставка</li>
+                <li><img src="assets/images/icons/discount-promo.svg" alt="Знак проценту">Акційні пропозиції</li>
             </ul>
         </section>
-        <section id="catalogue">
+        <section class="catalogue" id="catalogue">
             <h2>Каталог</h2>
             <div class="catalogue-cards">
                 <article>
-                    <img src="./assets/images/nuts-production.png" alt="Горішки">
+                    <img src="assets/images/products/nuts-production.webp" alt="Горішки">
                     <h3>Горішки</h3>
                     <p>Смажені та ароматні горішки, які стануть чудовим перекусом у будь-який час.</p>
-                    <button>Докладніше</button>
+                    <button>Докладніше...</button>
                 </article>
                 <article>
-                    <img src="./assets/images/chips-production.png" alt="Чіпси">
+                    <img src="assets/images/products/chips-production.webp" alt="Чіпси">
                     <h3>Чіпси</h3>
                     <p>Хрусткі чіпси з натуральних інгредієнтів для справжніх поціновувачів смаку.</p>
-                    <button>Докладніше</button>
+                    <button>Докладніше...</button>
                 </article>
                 <article>
-                    <img src="./assets/images/bread-production.png" alt="Сухаріки">
+                    <img src="assets/images/products/bread-production.webp" alt="Сухаріки">
                     <h3>Сухаріки</h3>
                     <p>Апетитні сухаріки з різними смаками, що доповнять ваш улюблений напій.</p>
-                    <button>Докладніше</button>
+                    <button>Докладніше...</button>
                 </article>
                 <article>
-                    <img src="./assets/images/sea-production.png" alt="Сушені морепродукти">
+                    <img src="assets/images/products/sea-production.webp" alt="Сушені морепродукти">
                     <h3>Сушені морепродукти</h3>
                     <p>Сушені морепродукти з вишуканим смаком для гурманів.</p>
-                    <button>Докладніше</button>
+                    <button>Докладніше...</button>
                 </article>
             </div>
 
         </section>
-        <section id="feedback">
+        <section class="feedback" id="feedback">
             <h2>Відгуки клієнтів</h2>
             <div class="slider">
-                <article>
-                    <img src="./assets/images/person.svg" alt="Фото клієнта">
+                <article class="slide active">
+                    <img src="assets/images/icons/person.svg" alt="Фото клієнта">
                     <h3>Анна, Київ</h3>
                     <p>Найкращі снеки до вечірки з друзями!</p>
                 </article>
-                <article>
-                    <img src="./assets/images/person.svg" alt="Фото клієнта">
+                <article class="slide">
+                    <img src="assets/images/icons/person.svg" alt="Фото клієнта">
                     <h3>Олег, Львів</h3>
                     <p>Дуже швидка доставка і якість на висоті!</p>
                 </article>
-                <article>
-                    <img src="./assets/images/person.svg" alt="Фото клієнта">
+                <article class="slide">
+                    <img src="assets/images/icons/person.svg" alt="Фото клієнта">
                     <h3>Марія, Одеса</h3>
                     <p>Брали на компанію, дуже свіжа продукція, ми задоволені!</p>
                 </article>
-                <img src="./assets/images/left-arrow.svg" alt="попередній">
-                <img src="./assets/images/right-arrow.svg" alt="наступний">
+                <img src="assets/images/icons/left-arrow.svg" alt="попередній" class="arrow left">
+                <img src="assets/images/icons/right-arrow.svg" alt="наступний" class="arrow right">
             </div>
         </section>
-        <section id="form-section">
-            <h2>Контактна форма</h2>
-            <form>
-                <div>
-                    <label for="name"></label>
-                    <input type="text" id="name" name="name" placeholder="Ваше ім'я">
-                </div>
-                <div>
-                    <label for="email"></label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com">
-                </div>
-                <div>
-                    <label for="message">Повідомлення</label>
-                    <textarea id="message" name="message" placeholder="Напишіть Ваше повідомлення"></textarea>
-                </div>
-                <button type="submit">Надіслати заявку</button>
-            </form>
+        <section class="form-section" id="form-section">
+            <div class="form-container">
+                <img src="./assets/images/icons/cross.svg" alt="закрити форму" id="close-form">
+                <h2>Контактна форма</h2>
+                <form>
+                    <div>
+                        <label for="name">Ім'я</label>
+                        <input type="text" id="name" name="name" placeholder="Ваше ім'я">
+                    </div>
+                    <div>
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+380-999-99-99">
+                    </div>
+                    <div>
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" name="message" placeholder="Напишіть Ваше повідомлення"></textarea>
+                    </div>
+                    <button class="main-btn" type="submit">Надіслати заявку</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer id="contacts">
         <div class="social">
-            <a href="#"><img src="./assets/images/telegram-logo.svg" alt="посилання на телеграм"></a>
-            <a href="#"><img src="./assets/images/instagram-logo.svg" alt="посилання на інстаграм"></a>
-            <a href="#"><img src="./assets/images/facebook-logo.svg" alt="посилання на фейсбук"></a>
+            <a href="#"><img src="assets/images/icons/telegram-logo.svg" alt="посилання на телеграм"></a>
+            <a href="#"><img src="assets/images/icons/instagram-logo.svg" alt="посилання на інстаграм"></a>
+            <a href="#"><img src="assets/images/icons/facebook-logo.svg" alt="посилання на фейсбук"></a>
         </div>
         <div class="contacts">
             <a href="tel:+3804567890">+3804567890</a>
@@ -126,5 +131,6 @@
             <p>© 2024 SnackBuddy</p>
         </div>
     </footer>
+    <script type="module" src="scripts/main.js"></script>
 </body>
-</html>посилання на
+</html>
