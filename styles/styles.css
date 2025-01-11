@@ -259,7 +259,7 @@ section h2 {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.slide.active::before {
+.slide.active::after {
     content: "";
     position: absolute;
     top: 8px;
@@ -267,7 +267,7 @@ section h2 {
     width: 100%;
     height: 100%;
     background-color: #fefaf2;
-    z-index: -1;
+    z-index: -10;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -288,6 +288,7 @@ section h2 {
     height: 30px;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 0;
 }
 
 .arrow.left {
@@ -387,8 +388,22 @@ form button {
 }
 
 @media (pointer: fine) {
-    button:hover,
+    button:active,
+    header nav ul li a:active {
+        cursor: pointer;
+        transform: none;
+    }
+
     header nav ul li a:hover {
+        background-color: var(--broun-4);
+        transform: none;
+    }
+
+    .arrow:active {
+        cursor: pointer;
+    }
+
+    button:hover {
         cursor: pointer;
         transform: scale(1.1);
     }
@@ -571,4 +586,11 @@ form button {
         font-size: 1rem;
     }
 
+}
+
+@media (min-width: 75rem) and (pointer: fine) {
+    header nav ul li a:hover {
+        background: none;
+        transform: scale(1.2);
+    }
 }

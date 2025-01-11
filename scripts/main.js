@@ -19,21 +19,6 @@ const form = {
     closeBtn: document.querySelector('#close-form'),
 }
 
-//region NAVIGATION
-navigation.openBtn.addEventListener('click', () => isMenuOpen(true, navigation))
-
-navigation.closeBtn.addEventListener('click', () => isMenuOpen(false, navigation))
-
-
- console.log(windowInnerWidth)
-if (windowInnerWidth < 1200) {
-    navigation.navList.forEach(navEl => {
-        navEl.addEventListener('click', () => isMenuOpen(false, navigation))
-    })
-}
-
-//endregion
-
 //region SLIDE_BAR
 let currentSlide = 0;
 
@@ -60,3 +45,17 @@ slideBar.nextBtn.addEventListener('click', nextSlide);
 
 form.openBtn.addEventListener('click', () => isFormOpen(true, form));
 form.closeBtn.addEventListener('click', () => isFormOpen(false, form));
+
+//region NAVIGATION
+navigation.openBtn.addEventListener('click', () => isMenuOpen(true, navigation))
+
+navigation.closeBtn.addEventListener('click', () => isMenuOpen(false, navigation))
+
+
+if (windowInnerWidth < 1200) {
+    navigation.navList.forEach(navEl => {
+        navEl.addEventListener('click', () => isMenuOpen(false, navigation))
+    })
+}
+
+//endregion
