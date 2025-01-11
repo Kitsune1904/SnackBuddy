@@ -19,6 +19,10 @@ button {
     background: none;
 }
 
+button, img {
+    user-select: none;
+}
+
 * {
     margin: 0;
     padding: 0;

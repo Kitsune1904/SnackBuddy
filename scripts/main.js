@@ -1,5 +1,6 @@
 import {isFormOpen, isMenuOpen} from './helpers.js';
 
+const windowInnerWidth = window.innerWidth;
 const navigation = {
     openBtn: document.querySelector('#open-menu-btn'),
     closeBtn: document.querySelector('#close-menu-btn'),
@@ -23,35 +24,38 @@ navigation.openBtn.addEventListener('click', () => isMenuOpen(true, navigation))
 
 navigation.closeBtn.addEventListener('click', () => isMenuOpen(false, navigation))
 
-navigation.navList.forEach(navEl => {
-    navEl.addEventListener('click', () => isMenuOpen(false, navigation))
-})
+
+ console.log(windowInnerWidth)
+if (windowInnerWidth < 1200) {
+    navigation.navList.forEach(navEl => {
+        navEl.addEventListener('click', () => isMenuOpen(false, navigation))
+    })
+}
+
 //endregion
 
 //region SLIDE_BAR
-document.addEventListener('DOMContentLoaded', () => {
-    let currentSlide = 0;
+let currentSlide = 0;
 
-    const showSlide = (index) => {
-        slideBar.slides.forEach((slide, i) => {
-            slide.classList.toggle('active', i === index);
-        });
-    };
+const showSlide = (index) => {
+    slideBar.slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+};
 
-    const nextSlide = () => {
-        currentSlide = (currentSlide + 1) % slideBar.slides.length;
-        showSlide(currentSlide);
-    };
+const nextSlide = () => {
+    currentSlide = (currentSlide + 1) % slideBar.slides.length;
+    showSlide(currentSlide);
+};
 
-    const prevSlide = () => {
-        currentSlide = (currentSlide - 1 + slideBar.slides.length) % slideBar.slides.length;
-        showSlide(currentSlide);
-    };
+const prevSlide = () => {
+    currentSlide = (currentSlide - 1 + slideBar.slides.length) % slideBar.slides.length;
+    showSlide(currentSlide);
+};
 
-    slideBar.prevBtn.addEventListener('click', prevSlide);
-    slideBar.nextBtn.addEventListener('click', nextSlide);
+slideBar.prevBtn.addEventListener('click', prevSlide);
+slideBar.nextBtn.addEventListener('click', nextSlide);
 
-})
 //endregion
 
 form.openBtn.addEventListener('click', () => isFormOpen(true, form));
