@@ -1,0 +1,77 @@
+.catalogue .catalogue-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.catalogue article {
+    box-shadow: var(--element-shadow);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 0.25rem;
+    background-color: var(--main-light);
+}
+
+.catalogue img {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    width: 100%;
+}
+
+.catalogue article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.catalogue h3 {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.catalogue p {
+    font-size: 0.8rem;
+    color: var(--brown-1);
+    margin: 0 0.5rem;
+    flex-grow: 1;
+}
+
+.catalogue span {
+    font-weight: bold;
+    margin: 0 0.5rem;
+}
+
+.catalogue article .secondary-btn {
+    display: block;
+    width: calc(100% - 1rem);
+    margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.catalogue article .secondary-btn:hover {
+    background: var(--brown-1);
+    transform: unset;
+}
+
+@media (min-width: 48rem) {
+    .catalogue .catalogue-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .catalogue h3 {
+        font-size: 2rem;
+    }
+
+    .catalogue p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .catalogue .catalogue-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

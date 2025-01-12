@@ -14,7 +14,10 @@
 </head>
 <body>
     <header>
-        <h1>SnackBuddy</h1>
+        <div class="logo">
+            <img src="./assets/images/logo_mini.webp" alt="logo">
+            <h1>SnackBuddy</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#main">Головна</a></li>
@@ -46,62 +49,13 @@
         <section class="catalogue" id="catalogue">
             <h2>Каталог</h2>
             <div class="catalogue-cards">
-                <article>
-                    <img src="assets/images/products/nuts-production.webp" alt="Горішки">
-                    <div>
-                        <h3>Горішки</h3>
-                        <p>Смажені та ароматні горішки, які стануть чудовим перекусом у будь-який час.</p>
-                        <span>Ціна: 200грн.</span>
-                        <button class="secondary-btn">Докладніше...</button>
-                    </div>
-                </article>
-                <article>
-                    <img src="assets/images/products/chips-production.webp" alt="Чіпси">
-                    <div>
-                        <h3>Чіпси</h3>
-                        <p>Хрусткі чіпси з натуральних інгредієнтів для справжніх поціновувачів смаку.</p>
-                        <span>Ціна: 200грн.</span>
-                        <button class="secondary-btn">Докладніше...</button>
-                    </div>
-                </article>
-                <article>
-                    <img src="assets/images/products/bread-production.webp" alt="Сухаріки">
-                    <div>
-                        <h3>Сухаріки</h3>
-                        <p>Апетитні сухаріки з різними смаками, що доповнять ваш улюблений напій.</p>
-                        <span>Ціна: 200грн.</span>
-                        <button class="secondary-btn">Докладніше...</button>
-                    </div>
-                </article>
-                <article>
-                    <img src="assets/images/products/sea-production.webp" alt="Сушені морепродукти">
-                    <div>
-                        <h3>Сушені морепродукти</h3>
-                        <p>Сушені морепродукти з вишуканим смаком для гурманів.</p>
-                        <span>Ціна: 200грн.</span>
-                        <button class="secondary-btn">Докладніше...</button>
-                    </div>
-                </article>
             </div>
         </section>
         <section class="feedback" id="feedback">
             <h2>Відгуки клієнтів</h2>
             <div class="slider">
-                <article class="slide active">
-                    <img src="assets/images/icons/person.svg" alt="Фото клієнта">
-                    <h3>Анна, Київ</h3>
-                    <p>Найкращі снеки до вечірки з друзями!</p>
-                </article>
-                <article class="slide">
-                    <img src="assets/images/icons/person.svg" alt="Фото клієнта">
-                    <h3>Олег, Львів</h3>
-                    <p>Дуже швидка доставка і якість на висоті!</p>
-                </article>
-                <article class="slide">
-                    <img src="assets/images/icons/person.svg" alt="Фото клієнта">
-                    <h3>Марія, Одеса</h3>
-                    <p>Брали на компанію, дуже свіжа продукція, ми задоволені!</p>
-                </article>
+                <div class="slider-content">
+                </div>
                 <img src="assets/images/icons/left-arrow.svg" alt="попередній" class="arrow left">
                 <img src="assets/images/icons/right-arrow.svg" alt="наступний" class="arrow right">
             </div>
@@ -142,6 +96,23 @@
             <a href="mailto:snackbuddy@gmail.com">snackbuddy@gmail.com</a>
         </div>
     </footer>
+    <template id="feedback-template">
+        <figure class="slide">
+            <img src="" alt="Фото клієнта">
+            <blockquote></blockquote>
+            <span></span>
+            <figcaption></figcaption>
+        </figure>
+    </template>
+    <template id="catalogue-template">
+        <article>
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+            <span></span>
+            <a class="secondary-btn">Докладніше</a>
+        </article>
+    </template>
     <script type="module" src="scripts/main.js"></script>
 </body>
 </html>

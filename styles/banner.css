@@ -1,0 +1,67 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-image: url('../assets/images/baner-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--main-light);
+    height: 23rem;
+    margin: 0;
+    padding: 4rem 1rem;
+}
+
+.banner h1 {
+    width: 80%;
+    font-size: 3rem;
+    text-align: end;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    width: 65%;
+    text-align: end;
+    margin-bottom: 1rem;
+}
+
+.banner .main-btn {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 48rem) {
+    .banner {
+        padding: 4rem 3rem;
+    }
+    .banner h1 {
+        font-size: 4rem;
+        width: 60%;
+    }
+    .banner p {
+        font-size: 1.2rem;
+        width: 50%;
+    }
+
+    .banner .main-btn {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .banner {
+        padding: 6.5rem;
+        height: 30rem;
+    }
+
+    .banner h1 {
+        font-size: 4.5rem;
+    }
+
+    .banner p {
+        font-size: 1.5rem;
+    }
+
+    .banner .main-btn {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,58 @@
+.advantages ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.advantages li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.advantages span {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--yellow-1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages img {
+    width: 2rem;
+}
+
+@media (min-width: 48rem) {
+    .advantages ul {
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .advantages span {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .advantages img {
+        width: 2.5rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .advantages ul {
+        font-size: 1.5rem;
+    }
+
+    .advantages span {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .advantages img {
+        width: 3.5rem;
+    }
+}

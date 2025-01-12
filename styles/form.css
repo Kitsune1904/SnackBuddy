@@ -1,0 +1,59 @@
+.form-section {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    backdrop-filter: blur(5px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    position: relative;
+    background-color: var(--brown-1);
+    box-shadow: 0 5px 10px 0 rgb(32, 32, 32);
+    padding: 2.5rem 2rem 2rem 2rem;
+    color: var(--main-light);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.form-container h2 {
+    color: var(--main-light);
+}
+
+.form-container img {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.5rem;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form input, form textarea {
+    background-color: var(--yellow-3);
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: none;
+    height: 6rem;
+}
+
+form button {
+    margin: 0 auto;
+}
+

@@ -1,0 +1,138 @@
+.feedback {
+    position: relative;
+    margin: 2rem 0 5rem 0;
+}
+
+.slider {
+    max-width: 100dvw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 1rem;
+    padding: 0.25rem 10vw;
+    transition: margin-left 0.5s;
+}
+
+.slide {
+    min-width: 80vw;
+    max-width: 80vw;
+    background-color: var(--main-light);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    align-items: center;
+    box-shadow: var(--element-shadow);
+}
+
+.slide img {
+    background: var(--yellow-1);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    justify-self: center;
+}
+
+.slide figcaption {
+    align-self: end;
+    text-align: end;
+    grid-row: 2 / 3;
+    user-select: none;
+    grid-column: 2 / -1;
+    color: var(--accent);
+    font-size: 1.2rem;
+    font-family: var(--font-special), serif;
+}
+
+.slide blockquote {
+    font-size: 1.2rem;
+    user-select: none;
+    font-family: var(--font-normal) sans-serif;
+}
+
+.slide blockquote::before, .slide blockquote::after {
+    font-size: 1.5rem;
+    color: var(--accent);
+    content: '«';
+    user-select: none;
+    font-family: var(--font-special), serif;
+}
+
+.slide blockquote::after {
+    content: '»';
+}
+
+.slide span {
+    align-self: end;
+    user-select: none;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    font-family: var(--font-special), serif;
+}
+
+.arrow {
+    width: 2rem;
+    position: absolute;
+}
+
+.arrow:active {
+    filter: drop-shadow(0 0 0.3rem var(--accent));
+}
+
+.arrow.left {
+    bottom: -3rem;
+    left: 20%;
+}
+
+.arrow.right {
+    bottom: -3rem;
+    right: 20%;
+}
+
+@media (pointer: fine) {
+    .arrow:hover {
+        cursor: pointer;
+        filter: drop-shadow(0 0 0.3rem var(--accent));
+    }
+}
+
+@media (min-width: 48rem) {
+    .slider-content {
+        padding: 0.25rem 20vw
+    }
+    .slide {
+        min-width: 60vw;
+        max-width: 60vw;
+    }
+    .slide blockquote {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 75rem) {
+    .feedback h3 {
+        font-size: 1.5rem;
+    }
+
+    .feedback p {
+        font-size: 1rem;
+    }
+
+    .slider-content {
+        padding: 0.25rem 10vw;
+    }
+
+    .slide {
+        min-width: 40vw;
+        max-width: 40vw;
+    }
+}
