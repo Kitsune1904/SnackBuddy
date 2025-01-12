@@ -69,7 +69,7 @@ function renderDynamic(data) {
  * Invoke this after finishing all main callbacks to retrieve actual data from server
  */
 export function start() {
-    fetch('/assets/db_emul.json', {
+    fetch('../assets/db_emul.json', {
         method: 'GET',
         mode: 'cors',
         cache: 'no-cache',
